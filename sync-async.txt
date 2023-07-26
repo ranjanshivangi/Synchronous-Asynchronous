@@ -1,0 +1,19 @@
+By default, JavaScript is a synchronous, single threaded programming language. 
+This means that instructions can only run one after another, and not in parallel.
+Consider the little code snippet below:
+let a = 1;
+let b = 2;
+let sum = a + b;
+console.log(sum);
+The above code is pretty simple – it sums two numbers and then logs the sum to the browser console. 
+The interpreter executes these instructions one after another in that order until it is done.
+But this method comes along with disadvantages. Say we wanted to fetch some large amount of data from a database and then display it on our interface. 
+When the interpreter reaches the instruction that fetches this data, the rest of the code is blocked from executing until the data has been fetched and returned.
+
+Asynchronous programming is a multithreaded model that’s applied to networking and communications. 
+Asynchronous is a non-blocking architecture, which means it doesn’t block further execution while one or more operations are in progress. 
+In simple terms, this means that multiple related operations can run concurrently without waiting for other tasks to complete. 
+
+avaScript is an asynchronous and concurrent programming language that offers a lot of flexibility. 
+It’s single-threaded like synchronous, but also non-blocking like asynchronous.
+Although it’s synchronous by nature, JavaScript benefits from asynchronous code.
